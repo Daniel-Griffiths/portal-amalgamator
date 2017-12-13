@@ -6,9 +6,11 @@ error_reporting(E_ALL);
 
 require __DIR__.'/../vendor/autoload.php';
 
-use DanielGriffiths\PortalAmalgamator\PortalAmalgamator;
-use DanielGriffiths\PortalAmalgamator\Portals\Rightmove;
-use DanielGriffiths\PortalAmalgamator\Portals\Zoopla;
+use DanielGriffiths\PortalAmalgamator\{
+	PortalAmalgamator,
+	Portals\Rightmove,
+	Portals\Zoopla
+};
 
 $portals = new PortalAmalgamator(
 	new Rightmove,
