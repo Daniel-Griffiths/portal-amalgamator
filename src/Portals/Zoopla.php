@@ -2,15 +2,15 @@
 
 namespace DanielGriffiths\PropertyAmalgamator\Portals;
 
-class Zoopla implements PortalInterface 
+class Zoopla extends AbstractPortal implements PortalInterface 
 {
 	public function search() : array 
 	{
-
+		return [];
 	}
 
 	public function details() : array
 	{
-
+		return [];
 	}
 }

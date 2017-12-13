@@ -20,8 +20,8 @@ class PropertyAmalgamator
 
 	public function search()
 	{
-		array_map(function($portal){
-			var_dump($portal);
+		return array_map(function($portal){
+			return $portal->search();
 		}, $this->portals);
 	}
 
