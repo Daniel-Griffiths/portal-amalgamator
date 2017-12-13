@@ -1,14 +1,14 @@
 <?php
 
-namespace DanielGriffiths\PropertyAmalgamator;
+namespace DanielGriffiths\PortalAmalgamator;
 
-use DanielGriffiths\PropertyAmalgamator\Portals\PortalInterface;
+use DanielGriffiths\PortalAmalgamator\Portals\PortalInterface;
 
 /**
- * @package PropertyAmalgamator
+ * @package PortalAmalgamator
  * @author Daniel Griffiths (daniel-griffiths)
  */
-class PropertyAmalgamator 
+class PortalAmalgamator 
 {
 	protected $portals;
 

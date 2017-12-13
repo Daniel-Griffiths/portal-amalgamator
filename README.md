@@ -1,3 +1,5 @@
-# Portal-Amalgamator
+# Portal Amalgamator
 
-Readme coming soon...
+A library to search and amalgamate property information from several property portals.
+
+Proper readme coming soon...

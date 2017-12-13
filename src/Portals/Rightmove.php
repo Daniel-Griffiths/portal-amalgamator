@@ -1,6 +1,6 @@
 <?php 
 
-namespace DanielGriffiths\PropertyAmalgamator\Portals;
+namespace DanielGriffiths\PortalAmalgamator\Portals;
 
 class Rightmove extends AbstractPortal implements PortalInterface 
 {

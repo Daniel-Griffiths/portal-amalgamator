@@ -23,7 +23,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "DanielGriffiths\\PropertyAmalgamator\\": "src"
+            "DanielGriffiths\\PortalAmalgamator\\": "src"
         }
     },
     "require": {
