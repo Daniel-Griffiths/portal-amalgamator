@@ -1,0 +1,33 @@
+{
+    "name": "daniel-griffiths/portal-amalgamator",
+    "type": "library",
+    "description": "A tool for to search for properties across many property portals",
+    "keywords": [
+        "daniel-griffiths",
+        "properties",
+        "property",
+        "portal",
+        "rightmove",
+        "zoopla",
+        "house"
+    ],
+    "homepage": "https://github.com/daniel-griffiths/portal-amalgamator",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Griffiths",
+            "email": "contact@danielgriffiths.me",
+            "homepage": "http://danielgriffiths.me",
+            "role": "Owner"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "DanielGriffiths\\PropertyAmalgamator\\": "src"
+        }
+    },
+    "require": {
+        "php": "~5.6|~7.0",
+        "fabpot/goutte": "^3.2"
+    }
+}
