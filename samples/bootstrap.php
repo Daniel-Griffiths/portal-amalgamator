@@ -17,6 +17,9 @@ $portals = new PortalAmalgamator(
 	new Zoopla
 );
 
-var_dump($portals->search([
-	'type' => 'rent'
-]));
+
+echo json_encode(
+	$portals->search([
+		'type' => 'rent'
+	])
+, JSON_PRETTY_PRINT);

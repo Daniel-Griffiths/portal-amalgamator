@@ -4,6 +4,12 @@ namespace DanielGriffiths\PortalAmalgamator\Portals;
 
 class Rightmove extends AbstractPortal implements PortalInterface 
 {
+	/**
+	 * Search for properties based on the specified filters.
+	 *
+	 * @param  array $filters
+	 * @return array
+	 */	
 	public function search(array $filters = []) : array 
 	{
 		return $this->request('GET', 'http://www.rightmove.co.uk/property-to-rent/find.html?searchType=RENT&locationIdentifier=REGION%5E219&insId=2&radius=0.0&minPrice=&maxPrice=&minBedrooms=&maxBedrooms=&displayPropertyType=&maxDaysSinceAdded=&sortByPriceDescending=&_includeLetAgreed=on&primaryDisplayPropertyType=&secondaryDisplayPropertyType=&oldDisplayPropertyType=&oldPrimaryDisplayPropertyType=&letType=&letFurnishType=&houseFlatShare=false')
