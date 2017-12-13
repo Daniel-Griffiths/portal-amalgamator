@@ -15,4 +15,6 @@ $portals = new PropertyAmalgamator(
 	new Zoopla
 );
 
-var_dump($portals->search());
+var_dump($portals->search([
+	'type' => 'rent'
+]));
