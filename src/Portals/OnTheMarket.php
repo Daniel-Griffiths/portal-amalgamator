@@ -40,7 +40,7 @@ class OnTheMarket extends AbstractPortal implements PortalInterface
 		return $this->request('GET', $this->createQueryString($filters))
 		->filter('.property-result')->each(function ($node) {
 		    return [
-				'image' => $node->filter('.image-wrapper > img')->attr('src'),
+				'image' => $node->filter('.image-wrapper img')->attr('src'),
 				'title' => $node->filter('.title')->text(),
 				'address' => $node->filter('.address')->text(),
 				'description' => $node->filter('.description')->text(),
