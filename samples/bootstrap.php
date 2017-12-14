@@ -13,9 +13,9 @@ use DanielGriffiths\PortalAmalgamator\{
 };
 
 $portals = new PortalAmalgamator(
-    new OnTheMarket,
-    new Rightmove
-    // new Zoopla
+    // new OnTheMarket,
+    // new Rightmove,
+    new Zoopla
 );
 
 var_dump(

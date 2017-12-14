@@ -30,14 +30,13 @@ class Zoopla extends AbstractPortal implements PortalInterface
 	{
 		return $this->request('GET', $this->createQueryString($filters))
 		->filter('.listing-results-wrapper')->each(function ($node) {
-		var_dump('test');
 		   return [
 				'image' => $node->filter('.photo-hover > img')->attr('src'),
-				// 'title' => $node->filter('.propertyCard-title')->text(),
+				'title' => $node->filter('a[itemprop="name"]')->text(),
 				'address' => $node->filter('.listing-results-address')->text(),
-				// 'description' => $node->filter('.propertyCard-description')->text(),
-				// 'price' => $node->filter('.propertyCard-priceValue')->text(),
-				// 'link' => $node->filter('.propertyCard-link')->attr('href')
+				'description' => $node->filter('p[itemprop="description"]')->text(),
+				'price' => $node->filter('.listing-results-price')->text(),
+				'link' => $node->filter('a')->attr('href')
 			];
 		});
 	}
