@@ -35,8 +35,25 @@ class PortalAmalgamator
 	{
 		return array_merge(
 			...array_map(function($portal) use ($filters){
-				return $portal->search($filters);
+				return $this->format(
+					$portal->search($filters)
+				);
 			}, $this->portals)
 		);
+	}
+
+	/**
+	 * Correctly format the scraped property data.
+	 * 
+	 * @param  array $data 
+	 * @return array
+	 */
+	protected function format(array $data) : array
+	{
+		return array_map(function($properties){
+			return array_map(function($property){
+				return trim($property);
+			}, $properties);
+		}, $data);
 	}
 }
