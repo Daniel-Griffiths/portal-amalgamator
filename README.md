@@ -28,16 +28,21 @@ use DanielGriffiths\PortalAmalgamator\{
 	Portals\Zoopla
 };
 
+// create a new instance of the amalgamator
+// feel free to add or remove portals as needed
 $portals = new PortalAmalgamator(
     new OnTheMarket,
     new Rightmove,
     new Zoopla
 );
 
-var_dump(
-	$portals->search([
-	    'type' => 'rent',
-	    'location' => 'bristol'
-	])
-);
+// search across all portals using an array 
+// of search parameters
+$properties = $portals->search([
+    'type' => 'rent',
+    'location' => 'bristol'
+]);
+
+// we now have an array of properties from every portal
+var_dump($properties);
 ```
