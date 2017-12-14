@@ -14,7 +14,7 @@ A library to search and amalgamate property information from several property po
 composer require daniel-griffiths/portal-amalgamator
 ```
 
-##Usage
+## Usage
 
 ```PHP
 <?php
