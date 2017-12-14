@@ -5,6 +5,18 @@ namespace DanielGriffiths\PortalAmalgamator\Portals;
 abstract class AbstractPortal extends \Goutte\Client
 {
 	/**
+	 * Ensure all request work over SSL. 
+	 */
+	public function __construct()
+	{
+		Parent::__construct();
+		
+		$this->setClient(new \GuzzleHttp\Client(array(
+		    'verify' => __DIR__.'/../cacert.pem',
+		)));
+	}
+
+	/**
 	 * Create the query string based on the specified filters.
 	 * 
 	 * @param  array  $filters
