@@ -11,9 +11,7 @@ abstract class AbstractPortal extends \Goutte\Client
 	{
 		Parent::__construct();
 		
-		$this->setClient(new \GuzzleHttp\Client(array(
-		    'verify' => __DIR__.'/../cacert.pem',
-		)));
+		$this->setClient(new \GuzzleHttp\Client(['verify' => __DIR__.'/../cacert.pem']));
 	}
 
 	/**
