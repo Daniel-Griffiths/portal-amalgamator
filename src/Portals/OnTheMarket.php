@@ -28,6 +28,15 @@ class OnTheMarket extends AbstractPortal implements PortalInterface
 	 */	
 	public function search(array $filters = []) : array 
 	{
+		// OnTheMarket uses "to" and "for" prefixes depending
+		// on the property type. This is a quick fix to make
+		// types compatible with OntheMarket.
+		if($filters['type'] == 'rent') {
+			$filters['type'] = 'to-' . $filters['type'];
+		} else {
+			$filters['type'] = 'for-' . $filters['type'];
+		}
+
 		return $this->request('GET', $this->createQueryString($filters))
 		->filter('.property-result')->each(function ($node) {
 		    return [
