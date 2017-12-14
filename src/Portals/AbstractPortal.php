@@ -22,8 +22,9 @@ abstract class AbstractPortal extends \Goutte\Client
 	 */
 	protected function createQueryString(array $filters = []) : string 
 	{
-		foreach ($filters as $key => $value) {
+		foreach($filters as $key => $value) {
 			unset($filters[$key]);
+			$this->baseUri = str_replace('{{'.$key.'}}', $value, $this->baseUri);
 			$filters[$this->filterAssociations[$key] ?? $key] = $value;
 		}
 
