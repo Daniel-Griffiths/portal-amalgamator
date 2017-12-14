@@ -19,7 +19,8 @@ $portals = new PortalAmalgamator(
 );
 
 echo json_encode(
-$portals->search([
-    'type' => 'rent',
-    'location' => 'REGION^219'
-]), JSON_PRETTY_PRINT);
+	$portals->search([
+	    'type' => 'rent',
+	    'location' => 'REGION^219'
+	])
+, JSON_PRETTY_PRINT);
