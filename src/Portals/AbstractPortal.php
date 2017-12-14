@@ -27,6 +27,6 @@ abstract class AbstractPortal extends \Goutte\Client
 			$filters[$this->filterAssociations[$key] ?? $key] = $value;
 		}
 
-		return $this->baseUri . http_build_query($filters);
+		return $this->baseUri . '?' . http_build_query($filters);
 	}
 }

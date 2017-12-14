@@ -33,13 +33,10 @@ class PortalAmalgamator
 	 */
 	public function search(array $filters = []) : array
 	{
-		return array_map(function($portal) use ($filters){
-			return $portal->search($filters);
-		}, $this->portals);
-	}
-
-	public function details()
-	{
-		//
+		return array_merge(
+			...array_map(function($portal) use ($filters){
+				return $portal->search($filters);
+			}, $this->portals)
+		);
 	}
 }

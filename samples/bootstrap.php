@@ -14,13 +14,13 @@ use DanielGriffiths\PortalAmalgamator\{
 
 $portals = new PortalAmalgamator(
     new OnTheMarket,
-    new Rightmove,
-    new Zoopla
+    new Rightmove
+    // new Zoopla
 );
 
-echo json_encode(
+var_dump(
 	$portals->search([
 	    'type' => 'rent',
 	    'location' => 'REGION^219'
 	])
-, JSON_PRETTY_PRINT);
+);

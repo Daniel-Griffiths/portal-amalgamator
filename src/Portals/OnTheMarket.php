@@ -32,11 +32,11 @@ class OnTheMarket extends AbstractPortal implements PortalInterface
 		->filter('.property-result')->each(function ($node) {
 		    return [
 				'image' => $node->filter('.image-wrapper > img')->attr('src'),
-				// 'title' => $node->filter('.propertyCard-title')->text(),
+				'title' => $node->filter('.title')->text(),
 				'address' => $node->filter('.address')->text(),
-				// 'description' => $node->filter('.propertyCard-description')->text(),
-				// 'price' => $node->filter('.propertyCard-priceValue')->text(),
-				// 'link' => $node->filter('.propertyCard-link')->attr('href')
+				'description' => $node->filter('.description')->text(),
+				'price' => $node->filter('.price')->text(),
+				'link' => $node->filter('.price')->attr('href')
 			];
 		});
 	}
