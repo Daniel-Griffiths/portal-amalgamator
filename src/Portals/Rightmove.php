@@ -11,7 +11,7 @@ class Rightmove extends AbstractPortal implements PortalInterface
 	 * 
 	 * @var string
 	 */
-	protected $baseUri = 'http://www.rightmove.co.uk/property-to-{{type}}/find.html';
+	protected $baseUri = 'http://www.rightmove.co.uk/property-to-{type}/find.html';
 
 	/**
 	 * Associate the portals query string parameters with our custom filters.

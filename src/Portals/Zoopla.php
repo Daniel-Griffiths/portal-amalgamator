@@ -9,7 +9,7 @@ class Zoopla extends AbstractPortal implements PortalInterface
 	 * 
 	 * @var string
 	 */
-	protected $baseUri = 'https://www.zoopla.co.uk/to-{{type}}/property/{{location}}/';
+	protected $baseUri = 'https://www.zoopla.co.uk/to-{type}/property/{location}/';
 
 	/**
 	 * Associate the portals query string parameters with our custom filters.

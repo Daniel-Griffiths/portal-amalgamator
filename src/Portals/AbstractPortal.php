@@ -24,7 +24,7 @@ abstract class AbstractPortal extends \Goutte\Client
 	{
 		foreach($filters as $key => $value) {
 			unset($filters[$key]);
-			$this->baseUri = str_replace('{{'.$key.'}}', $value, $this->baseUri);
+			$this->baseUri = str_replace('{'.$key.'}', $value, $this->baseUri);
 			$filters[$this->filterAssociations[$key] ?? $key] = $value;
 		}
 
