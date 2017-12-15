@@ -9,7 +9,7 @@ class OnTheMarket extends AbstractPortal implements PortalInterface
 	 * 
 	 * @var string
 	 */
-	protected $baseUri = 'https://www.onthemarket.com/{{type}}/property/bristol/';
+	protected $baseUri = 'https://www.onthemarket.com/{{type}}/property/{{location}}/';
 
 	/**
 	 * Associate the portals query string parameters with our custom filters.

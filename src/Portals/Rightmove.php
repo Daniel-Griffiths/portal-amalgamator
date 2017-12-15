@@ -25,6 +25,17 @@ class Rightmove extends AbstractPortal implements PortalInterface
 	];
 
 	/**
+	 * Rightmove uses id's rather than text in its searches.
+	 * Below is a full list of locations and their
+	 * corresponding id's
+	 * 
+	 * @var array
+	 */
+	protected $locationAssociations = [
+		'bristol' => '219',
+	];
+
+	/**
 	 * Search for properties based on the specified filters.
 	 *
 	 * @param  array $filters
@@ -32,6 +43,11 @@ class Rightmove extends AbstractPortal implements PortalInterface
 	 */	
 	public function search(array $filters = []) : array 
 	{
+		// swap the filter location text for the Rightmove id.
+		$filters['location'] = 'REGION^' . $this->locationAssociations[
+			$filters['location']
+		];
+
 		return $this->request('GET', $this->createQueryString($filters))
 		->filter('.is-list:not(.is-hidden) .propertyCard:not(.propertyCard--featured)')->each(function ($node) {
 		    return [
