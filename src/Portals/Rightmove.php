@@ -33,6 +33,8 @@ class Rightmove extends AbstractPortal implements PortalInterface
 	 */
 	protected $locationAssociations = [
 		'bristol' => '219',
+		'cardiff' => '93482',
+		'bridgend' => '61250',
 	];
 
 	/**
