@@ -14,9 +14,9 @@ use DanielGriffiths\PortalAmalgamator\{
 };
 
 $portals = new PortalAmalgamator(
-    //new OnTheMarket
-   // new Rightmove
-    new Zoopla
+	new OnTheMarket,
+	new Rightmove,
+	new Zoopla
 );
 
 echo json_encode(

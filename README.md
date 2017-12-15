@@ -41,8 +41,8 @@ $portals = new PortalAmalgamator(
 // search across all portals using an array 
 // of search parameters
 $properties = $portals->search([
-    'type' => 'rent',
-    'location' => 'bristol',
+	'type' => 'rent',
+	'location' => 'bristol',
 	'maxprice' => 800,
 	'minprice' => 1,
 	'maxbedrooms' => 2,
