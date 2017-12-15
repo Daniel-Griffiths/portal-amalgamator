@@ -75,7 +75,7 @@ A full list of supported filters can be found below:-
 
 ## Property Response Format
 
-After searching for properties you will receive an array of properties. I have included an example property below for reference (encoded as json).
+After completing a search an array of properties will be returns. For reference, an example property has been included below (encoded as json).
 
 ```JSON
 {
