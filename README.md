@@ -52,3 +52,15 @@ $properties = $portals->search([
 // we now have an array of properties from every portal
 var_dump($properties);
 ```
+## Filters
+
+Various filters can be passed into the `search` method, a full list of supported filters can be found below:-
+
+| Filter      | Type   | Valid Values                     | Example   |
+|-------------|--------|----------------------------------|-----------|
+| type        | string | "rent" or "sale"                 | "rent"    |
+| location    | string | Any UK location                  | "bristol" |
+| maxprice    | int    | Any number greater than 0        | 900 	  |
+| minprice    | int    | Any number greater than 0        | 100       |
+| maxbedrooms | int    | Any number greater than 0        | 3         | 
+| minbedrooms | int    | Any number greater than 0        | 1         | 
