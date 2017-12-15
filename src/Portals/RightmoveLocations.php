@@ -2,7 +2,7 @@
 
 namespace DanielGriffiths\PortalAmalgamator\Portals;
 
-trait RightmoveLocation 
+trait RightmoveLocations 
 {
 	/**
 	 * Rightmove uses id's rather than text in its searches.
