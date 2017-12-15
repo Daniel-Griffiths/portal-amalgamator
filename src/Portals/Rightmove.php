@@ -4,6 +4,8 @@ namespace DanielGriffiths\PortalAmalgamator\Portals;
 
 class Rightmove extends AbstractPortal implements PortalInterface 
 {
+	use RightmoveLocations;
+
 	/**
 	 * The base search uri for the portal.
 	 * 
@@ -22,19 +24,6 @@ class Rightmove extends AbstractPortal implements PortalInterface
 		'minprice' => 'minPrice',
 		'maxbedrooms' => 'maxBedrooms',
 		'minbedrooms' => 'minBedrooms',
-	];
-
-	/**
-	 * Rightmove uses id's rather than text in its searches.
-	 * Below is a full list of locations and their
-	 * corresponding id's
-	 * 
-	 * @var array
-	 */
-	protected $locationAssociations = [
-		'bristol' => '219',
-		'cardiff' => '93482',
-		'bridgend' => '61250',
 	];
 
 	/**
