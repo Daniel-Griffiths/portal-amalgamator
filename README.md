@@ -2,6 +2,8 @@
 
 A library to search and amalgamate property information from several property portals.
 
+Caution: This library scrapes the property portals for informstion, be aware that it could cease to work if the property portals update thier website structure.
+
 ## Currently Supported Portals
 
 - RightMove
@@ -40,7 +42,11 @@ $portals = new PortalAmalgamator(
 // of search parameters
 $properties = $portals->search([
     'type' => 'rent',
-    'location' => 'bristol'
+    'location' => 'bristol',
+	'maxprice' => 800,
+	'minprice' => 1,
+	'maxbedrooms' => 2,
+	'minbedrooms' => 1,
 ]);
 
 // we now have an array of properties from every portal

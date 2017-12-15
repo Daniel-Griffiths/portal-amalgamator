@@ -17,7 +17,10 @@ class OnTheMarket extends AbstractPortal implements PortalInterface
 	 * @var Array
 	 */
 	protected $filterAssociations = [
-
+		'maxprice' => 'max-price',
+		'minprice' => 'min-price',
+		'maxbedrooms' => 'max-bedrooms',
+		'minbedrooms' => 'min-bedrooms',
 	];
 
 	/**

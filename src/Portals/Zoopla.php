@@ -17,7 +17,10 @@ class Zoopla extends AbstractPortal implements PortalInterface
 	 * @var Array
 	 */
 	protected $filterAssociations = [
-
+		'maxprice' => 'price_max',
+		'minprice' => 'price_min',
+		'maxbedrooms' => 'beds_max',
+		'minbedrooms' => 'beds_min',
 	];
 
 	/**

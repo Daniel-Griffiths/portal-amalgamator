@@ -17,7 +17,11 @@ class Rightmove extends AbstractPortal implements PortalInterface
 	 * @var Array
 	 */
 	protected $filterAssociations = [
-		'location' => 'locationIdentifier'
+		'location' => 'locationIdentifier',
+		'maxprice' => 'maxPrice',
+		'minprice' => 'minPrice',
+		'maxbedrooms' => 'maxBedrooms',
+		'minbedrooms' => 'minBedrooms',
 	];
 
 	/**
