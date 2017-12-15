@@ -73,9 +73,9 @@ A full list of supported filters can be found below:-
 | maxbedrooms | int    | Any number greater than 0        | 3         | 
 | minbedrooms | int    | Any number greater than 0        | 1         | 
 
-## Property Array Format
+## Property Response Format
 
-
+After searching for properties you will receive an array of properties. I have included an example property below for reference (encoded as json).
 
 ```JSON
 {
