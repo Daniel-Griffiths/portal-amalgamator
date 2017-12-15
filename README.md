@@ -79,12 +79,12 @@ A full list of supported filters can be found below:-
 
 ```JSON
 {
-	image: "https://lid.zoocdn.com/354/255/abddb686034ea1ff19b6c0de370b8362520a88c2.jpg",
-	title: "1 bed flat to rent",
-	address: "Alma Road, Clifton, Bristol BS8",
-	description: "A one bedroom unfurnished apartment in clifton. A lovely light first floor flat with a large lounge and dining room area. Double bedroom. Separate kitchen with fridge/freezer, cooker and washing machine supplied. Bathroom with shower. Large storage ...",
-	price: "£800 pcm (£185 pw)",
-	link: "https://www.zoopla.co.uk/to-rent/details/45972752?search_identifier=cca03c7417fcf5ebf0b2af63779d4678",
-	source: "Zoopla"
+	"image": "https://lid.zoocdn.com/354/255/abddb686034ea1ff19b6c0de370b8362520a88c2.jpg",
+	"title": "1 bed flat to rent",
+	"address": "Alma Road, Clifton, Bristol BS8",
+	"description": "A one bedroom unfurnished apartment in clifton. A lovely light first floor flat with a large lounge and dining room area. Double bedroom. Separate kitchen with fridge/freezer, cooker and washing machine supplied. Bathroom with shower. Large storage ...",
+	"price": "£800 pcm (£185 pw)",
+	"link": "https://www.zoopla.co.uk/to-rent/details/45972752?search_identifier=cca03c7417fcf5ebf0b2af63779d4678",
+	"source": "Zoopla"
 }
 ```
