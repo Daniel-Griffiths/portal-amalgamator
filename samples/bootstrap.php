@@ -22,7 +22,7 @@ $portals = new PortalAmalgamator(
 echo json_encode(
 	$portals->search([
 	    'type' => 'rent',
-	    'location' => 'bristol',
+	    'location' => 'cardiff',
 		'maxprice' => 800,
 		'minprice' => 1,
 		'maxbedrooms' => 2,

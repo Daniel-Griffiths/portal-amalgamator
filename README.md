@@ -13,7 +13,7 @@ Caution: This library scrapes the property portals for informstion, be aware tha
 ## Installation
 
 ```
-composer require daniel-griffiths/portal-amalgamator
+composer require daniel-griffiths/portal-amalgamator dev-master
 ```
 
 ## Usage
