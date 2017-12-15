@@ -28,4 +28,6 @@ echo json_encode(
 		'maxbedrooms' => 2,
 		'minbedrooms' => 1,
 	])
+	->orderBy('price')
+	->get()
 , JSON_PRETTY_PRINT);
