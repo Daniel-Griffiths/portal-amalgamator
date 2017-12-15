@@ -2,7 +2,7 @@
 
 A library to search and amalgamate property information from several property portals.
 
-Caution: This library scrapes the property portals for informstion, be aware that it could cease to work if the property portals update thier website structure.
+Caution: This library scrapes the property portals for information, be aware that it could cease to work if the property portals update their website structure.
 
 ## Currently Supported Portals
 
