@@ -36,7 +36,7 @@ class Rightmove extends AbstractPortal implements PortalInterface
 	{
 		// swap the filter location text for the Rightmove id.
 		$filters['location'] = 'REGION^' . $this->locationAssociations[
-			$filters['location']
+			ucwords($filters['location'])
 		];
 
 		return $this->request('GET', $this->createQueryString($filters))

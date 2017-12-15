@@ -47,7 +47,7 @@ $properties = $portals->search([
 	'minprice' => 1,
 	'maxbedrooms' => 2,
 	'minbedrooms' => 1,
-]);
+])->orderBy('price')->get();
 
 // we now have an array of properties from every portal
 var_dump($properties);
