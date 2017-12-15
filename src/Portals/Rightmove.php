@@ -42,7 +42,7 @@ class Rightmove extends AbstractPortal implements PortalInterface
 		return $this->request('GET', $this->createQueryString($filters))
 		->filter('.is-list:not(.is-hidden) .propertyCard:not(.propertyCard--featured)')->each(function ($node) {
 		    return [
-				'image' => $node->filter('.propertyCard-img > img')->attr('src'),
+				'image' => 'http:' . $node->filter('.propertyCard-img > img')->attr('src'),
 				'title' => $node->filter('.propertyCard-title')->text(),
 				'address' => $node->filter('.propertyCard-address')->text(),
 				'description' => $node->filter('.propertyCard-description')->text(),
