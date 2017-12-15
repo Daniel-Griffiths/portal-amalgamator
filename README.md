@@ -47,7 +47,7 @@ $portals = new PortalAmalgamator(
 // of search parameters
 $properties = $portals->search([
 	'type' => 'rent',
-	'location' => 'bristol',
+	'location' => 'cardiff',
 	'maxprice' => 800,
 	'minprice' => 1,
 	'maxbedrooms' => 2,
@@ -67,7 +67,7 @@ A full list of supported filters can be found below:-
 | Filter      | Type   | Valid Values                     | Example   |
 |-------------|--------|----------------------------------|-----------|
 | type        | string | "rent" or "sale"                 | "rent"    |
-| location    | string | Any UK location                  | "bristol" |
+| location    | string | Any UK location                  | "cardiff" |
 | maxprice    | int    | Any number greater than 0        | 900 	  |
 | minprice    | int    | Any number greater than 0        | 100       |
 | maxbedrooms | int    | Any number greater than 0        | 3         | 
