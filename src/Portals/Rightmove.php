@@ -47,7 +47,8 @@ class Rightmove extends AbstractPortal implements PortalInterface
 				'address' => $node->filter('.propertyCard-address')->text(),
 				'description' => $node->filter('.propertyCard-description')->text(),
 				'price' => $node->filter('.propertyCard-priceValue')->text(),
-				'link' => $node->filter('.propertyCard-link')->attr('href')
+				'link' => 'http://www.rightmove.co.uk' . $node->filter('.propertyCard-link')->attr('href'),
+				'source' => basename(__CLASS__),
 			];
 		});
 	}

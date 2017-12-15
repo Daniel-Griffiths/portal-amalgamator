@@ -39,7 +39,8 @@ class Zoopla extends AbstractPortal implements PortalInterface
 				'address' => $node->filter('.listing-results-address')->text(),
 				'description' => $node->filter('p[itemprop="description"]')->text(),
 				'price' => $node->filter('.listing-results-price')->text(),
-				'link' => $node->filter('a')->attr('href')
+				'link' => 'https://www.zoopla.co.uk' . $node->filter('a')->attr('href'),
+				'source' => basename(__CLASS__),
 			];
 		});
 	}

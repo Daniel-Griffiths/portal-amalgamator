@@ -48,7 +48,8 @@ class OnTheMarket extends AbstractPortal implements PortalInterface
 				'address' => $node->filter('.address')->text(),
 				'description' => $node->filter('.description')->text(),
 				'price' => $node->filter('.price')->text(),
-				'link' => $node->filter('.price')->attr('href')
+				'link' => 'https://www.onthemarket.com' . $node->filter('.price')->attr('href'),
+				'source' => basename(__CLASS__),
 			];
 		});
 	}
