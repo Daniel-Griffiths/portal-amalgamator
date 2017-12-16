@@ -52,10 +52,5 @@ class Rightmove extends AbstractPortal implements PortalInterface
 			];
 		});
 	}
-
-	public function details() : array
-	{
-		return [];
-	}
 }
 

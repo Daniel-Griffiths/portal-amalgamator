@@ -44,9 +44,4 @@ class Zoopla extends AbstractPortal implements PortalInterface
 			];
 		});
 	}
-
-	public function details() : array
-	{
-		return [];
-	}
 }
