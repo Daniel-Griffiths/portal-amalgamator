@@ -1,0 +1,1 @@
+C:37:"PHPUnit\Runner\DefaultTestResultCache":162:{a:2:{s:7:"defects";a:1:{s:45:"PortalAmalgamatorTest::testDataHasCorrectKeys";i:4;}s:5:"times";a:1:{s:45:"PortalAmalgamatorTest::testDataHasCorrectKeys";d:4.408;}}}
