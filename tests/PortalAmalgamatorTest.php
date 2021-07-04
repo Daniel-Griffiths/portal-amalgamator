@@ -36,22 +36,7 @@ class PortalAmalgamatorTest extends TestCase
         $this->assertArrayHasKey('source', $property);    
     }
 
-    public function testZoopla()
-    {
-        $portals = new PortalAmalgamator(
-            new Zoopla
-        );
-
-        [$property] = $portals->search($this->searchQuery)->orderBy('price')->get();      
-
-        $this->assertArrayHasKey('image', $property);
-        $this->assertArrayHasKey('title', $property);
-        $this->assertArrayHasKey('address', $property);
-        $this->assertArrayHasKey('description', $property);
-        $this->assertArrayHasKey('price', $property);  
-        $this->assertArrayHasKey('link', $property);
-        $this->assertArrayHasKey('source', $property);  
-    } 
+   
 
     public function testOnTheMarket()
     {
