@@ -7,10 +7,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
+      - uses: actions/checkout@v1
 
-    - name: Install composer dependencies
-      run: composer install --prefer-dist
+      - name: Install composer dependencies
+        run: composer install --prefer-dist
 
-    - name: Run PHPUnit
-      run: php7.3 vendor/bin/phpunit
+      - name: Run PHPUnit
+        run: php7.3 vendor/bin/phpunit
