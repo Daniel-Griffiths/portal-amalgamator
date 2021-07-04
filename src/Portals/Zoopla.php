@@ -32,13 +32,13 @@ class Zoopla extends AbstractPortal implements PortalInterface
 	public function search(array $filters = []) : array 
 	{
 		return $this->request('GET', $this->createQueryString($filters))
-		->filter('.listing-results')->each(function ($node) {
+		->filter('[data-testid="search-content"] > div:nth-child(2) > div > div:not(:first-child)')->each(function ($node) {
 		   return [
-				'image' => $node->filter('.photo-hover > img')->attr('src'),
-				'title' => $node->filter('h2.listing-results-attr > a')->text(),
-				'address' => $node->filter('.listing-results-address')->text(),
-				'description' => $node->filter('.listing-results-right .available-from + p')->text(),
-				'price' => $node->filter('.listing-results-price')->text(),
+				'image' => $node->filter('[data-testid="listing-details-image-link"] > img')->attr('src'),
+				'title' => $node->filter('[data-testid="listing-details-link"] > h2')->text(),
+				'address' => $node->filter('[data-testid="listing-details-link"] > p')->text(),
+				'description' => "",
+				'price' => $node->filter('p[size=6]')->text(),
 				'link' => 'https://www.zoopla.co.uk' . $node->filter('a')->attr('href'),
 				'source' => basename(__CLASS__),
 			];

@@ -25,15 +25,15 @@ class PortalAmalgamatorTest extends TestCase
             new Rightmove
         );
 
-        $properties = $portals->search($this->searchQuery)->orderBy('price')->get();      
+        [$property] = $portals->search($this->searchQuery)->orderBy('price')->get();      
 
-        $this->assertArrayHasKey('image', $properties[0]);
-        $this->assertArrayHasKey('title', $properties[0]);
-        $this->assertArrayHasKey('address', $properties[0]);
-        $this->assertArrayHasKey('description', $properties[0]);
-        $this->assertArrayHasKey('price', $properties[0]);  
-        $this->assertArrayHasKey('link', $properties[0]);
-        $this->assertArrayHasKey('source', $properties[0]);    
+        $this->assertArrayHasKey('image', $property);
+        $this->assertArrayHasKey('title', $property);
+        $this->assertArrayHasKey('address', $property);
+        $this->assertArrayHasKey('description', $property);
+        $this->assertArrayHasKey('price', $property);  
+        $this->assertArrayHasKey('link', $property);
+        $this->assertArrayHasKey('source', $property);    
     }
 
     public function testZoopla()
@@ -42,15 +42,15 @@ class PortalAmalgamatorTest extends TestCase
             new Zoopla
         );
 
-        $properties = $portals->search($this->searchQuery)->orderBy('price')->get();      
+        [$property] = $portals->search($this->searchQuery)->orderBy('price')->get();      
 
-        $this->assertArrayHasKey('image', $properties[0]);
-        $this->assertArrayHasKey('title', $properties[0]);
-        $this->assertArrayHasKey('address', $properties[0]);
-        $this->assertArrayHasKey('description', $properties[0]);
-        $this->assertArrayHasKey('price', $properties[0]);  
-        $this->assertArrayHasKey('link', $properties[0]);
-        $this->assertArrayHasKey('source', $properties[0]);  
+        $this->assertArrayHasKey('image', $property);
+        $this->assertArrayHasKey('title', $property);
+        $this->assertArrayHasKey('address', $property);
+        $this->assertArrayHasKey('description', $property);
+        $this->assertArrayHasKey('price', $property);  
+        $this->assertArrayHasKey('link', $property);
+        $this->assertArrayHasKey('source', $property);  
     } 
 
     public function testOnTheMarket()
@@ -59,14 +59,14 @@ class PortalAmalgamatorTest extends TestCase
             new OnTheMarket
         );
 
-        $properties = $portals->search($this->searchQuery)->orderBy('price')->get();      
+        [$property] = $portals->search($this->searchQuery)->orderBy('price')->get();      
 
-        $this->assertArrayHasKey('image', $properties[0]);
-        $this->assertArrayHasKey('title', $properties[0]);
-        $this->assertArrayHasKey('address', $properties[0]);
-        $this->assertArrayHasKey('description', $properties[0]);
-        $this->assertArrayHasKey('price', $properties[0]);  
-        $this->assertArrayHasKey('link', $properties[0]);
-        $this->assertArrayHasKey('source', $properties[0]);  
+        $this->assertArrayHasKey('image', $property);
+        $this->assertArrayHasKey('title', $property);
+        $this->assertArrayHasKey('address', $property);
+        $this->assertArrayHasKey('description', $property);
+        $this->assertArrayHasKey('price', $property);  
+        $this->assertArrayHasKey('link', $property);
+        $this->assertArrayHasKey('source', $property);  
     } 
 }
