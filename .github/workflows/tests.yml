@@ -9,10 +9,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install dependencies
-        uses: php-actions/composer@v6
-
-      - name: PHPUnit tests
-        uses: php-actions/phpunit@v3
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
         with:
-          memory_limit: 256M
+          php-version: "8.3"
+          extensions: mbstring, dom, json, libxml, tokenizer, xml, xmlwriter
+
+      - name: Install composer dependencies
+        run: composer install --prefer-dist
+
+      - name: Run PHPUnit
+        run: vendor/bin/phpunit

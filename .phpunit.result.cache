@@ -1,1 +1,1 @@
-{"version":1,"defects":{"PortalAmalgamatorTest::testRightmove":4,"PortalAmalgamatorTest::testOnTheMarket":1,"PortalAmalgamatorTest::testZoopla":1},"times":{"PortalAmalgamatorTest::testRightmove":0.553,"PortalAmalgamatorTest::testOnTheMarket":0,"PortalAmalgamatorTest::testZoopla":0}}
+{"version":1,"defects":{"PortalAmalgamatorTest::testRightmove":4,"PortalAmalgamatorTest::testOnTheMarket":1,"PortalAmalgamatorTest::testZoopla":1},"times":{"PortalAmalgamatorTest::testRightmove":0.46,"PortalAmalgamatorTest::testOnTheMarket":0,"PortalAmalgamatorTest::testZoopla":0}}
