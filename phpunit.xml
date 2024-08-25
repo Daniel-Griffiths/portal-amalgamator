@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<phpunit colors="true" strict="true" bootstrap="./tests/bootstrap.php">
-
-    <testsuites>
-        <testsuite name="Test Suite">
-            <directory>./tests/</directory>
-        </testsuite>
-    </testsuites>
-	
-	<logging>
-        <log type="coverage-text" target="php://stdout" showUncoveredFiles="true" />
-    </logging>
-
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" colors="true" bootstrap="./tests/bootstrap.php" beStrictAboutTestsThatDoNotTestAnything="true" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd">
+  <coverage>
+    <report>
+      <text outputFile="php://stdout" showUncoveredFiles="true"/>
+    </report>
+  </coverage>
+  <testsuites>
+    <testsuite name="Test Suite">
+      <directory>./tests/</directory>
+    </testsuite>
+  </testsuites>
+  <logging/>
 </phpunit>

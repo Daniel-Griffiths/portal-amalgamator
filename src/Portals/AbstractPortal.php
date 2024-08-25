@@ -2,8 +2,15 @@
 
 namespace DanielGriffiths\PortalAmalgamator\Portals;
 
-abstract class AbstractPortal extends \Goutte\Client
+abstract class AbstractPortal extends \Symfony\Component\BrowserKit\HttpBrowser
 {
+	/**
+	 * The base search uri for the portal.
+	 * 
+	 * @var string
+	 */
+	protected string $baseUri;
+
 	/**
 	 * Ensure all request work over SSL. 
 	 */

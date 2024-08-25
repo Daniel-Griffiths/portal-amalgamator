@@ -2,6 +2,9 @@
 
 namespace DanielGriffiths\PortalAmalgamator\Portals;
 
+/**
+ * @deprecated No longer works as of 2024-08-25
+ */
 class OnTheMarket extends AbstractPortal implements PortalInterface 
 {
 	/**
@@ -9,7 +12,7 @@ class OnTheMarket extends AbstractPortal implements PortalInterface
 	 * 
 	 * @var string
 	 */
-	protected $baseUri = 'https://www.onthemarket.com/{type}/property/{location}/';
+	protected string $baseUri = 'https://www.onthemarket.com/{type}/property/{location}/';
 
 	/**
 	 * Associate the portals query string parameters with our custom filters.

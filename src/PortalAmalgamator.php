@@ -11,7 +11,7 @@ use DanielGriffiths\PortalAmalgamator\Portals\PortalInterface;
 class PortalAmalgamator 
 {
 	/**
-	 * @var PortalInterface
+	 * @var PortalInterface[] 
 	 */
 	protected $portals;
 
@@ -23,7 +23,7 @@ class PortalAmalgamator
 	/**
 	 * Create a new PortalAmalgamator instance.
 	 * 
-	 * @param PortalInterface $portals
+	 * @param PortalInterface[] $portals
 	 */
 	public function __construct(PortalInterface ...$portals)
 	{
